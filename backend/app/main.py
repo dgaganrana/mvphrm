@@ -16,15 +16,15 @@ app = FastAPI(
     lifespan=lifespan
 )
 
-# Add logging middleware first (so it wraps all other middleware)
-app.add_middleware(LoggingMiddleware)
+# # Add logging middleware first (so it wraps all other middleware)
+# app.add_middleware(LoggingMiddleware)
 
 # Add CORS middleware using Settings
 origins = [
     # settings.FRONTEND_URL,
     # settings.FRONTEND_URL_PROD,
     "http://localhost:3000",
-    "https://mvphrm.vercel.app/"
+    "https://mvphrm.vercel.app"
 ]
 
 app.add_middleware(
@@ -34,6 +34,9 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# Add logging middleware after CORS
+app.add_middleware(LoggingMiddleware)
 
 # Dynamically discover and register all routers in app/api
 for _, module_name, _ in pkgutil.iter_modules(api_pkg.__path__):

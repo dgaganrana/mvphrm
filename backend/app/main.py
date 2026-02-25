@@ -21,8 +21,9 @@ app.add_middleware(LoggingMiddleware)
 
 # Add CORS middleware using Settings
 origins = [
-    settings.FRONTEND_URL,
-    settings.FRONTEND_URL_PROD,
+    # settings.FRONTEND_URL,
+    # settings.FRONTEND_URL_PROD,
+    "http://localhost:3000",
     "https://mvphrm.vercel.app/"
 ]
 

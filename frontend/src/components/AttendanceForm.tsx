@@ -34,7 +34,7 @@ export default function AttendanceForm() {
       // Log response for debugging
       console.log("Attendance response:", data);
       
-      const empId = data.employee_id || data.employeeId;
+      const empId = data.employee_id;
       setMessage(
         `Attendance marked successfully for employee ${empId} on ${data.date}`
       );

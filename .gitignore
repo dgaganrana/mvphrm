@@ -1,0 +1,53 @@
+# Node.js / Next.js (frontend)
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# Python / FastAPI (backend)
+backend/__pycache__/
+backend/*.pyc
+backend/*.pyo
+backend/*.pyd
+backend/*.sqlite3
+backend/*.egg-info/
+
+# Virtual environment (backend)
+backend/venv/
+
+# Alembic migrations cache
+backend/app/migrations/versions/*.pyc
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# If you want to be more specific:
+backend/app/migrations/__pycache__/
+
+
+# Docker
+*.pid
+*.log
+*.tmp
+*.swp
+docker-compose.override.yml
+
+# Environment files
+.env
+.env.local
+.env.*.local
+frontend/.env.local
+backend/.env
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# OS files
+.DS_Store
+Thumbs.db

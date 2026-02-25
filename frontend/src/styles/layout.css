@@ -1,0 +1,30 @@
+/* Navigation bar */
+nav {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+}
+
+/* Main content area */
+main {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Dark theme support */
+body.dark {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+body.dark nav {
+  background-color: #1e1e1e;
+  border-bottom: 1px solid #333;
+}
+
+body.dark a {
+  color: #66b2ff;
+}

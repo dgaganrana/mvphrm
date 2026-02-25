@@ -1,0 +1,37 @@
+# Ignore Python cache and build artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.db
+
+# Ignore virtual environments
+venv/
+.env/
+.env.local
+.env.dev
+.env.prod
+
+# Ignore logs
+*.log
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore Git and CI/CD files
+.git/
+.gitignore
+.gitattributes
+.github/
+.gitlab/
+
+# Ignore Docker files not needed inside image
+docker-compose.yml
+.dockerignore
+
+# Ignore IDE/editor configs
+.vscode/
+.idea/
+*.swp

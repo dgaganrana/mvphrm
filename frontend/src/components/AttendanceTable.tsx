@@ -21,7 +21,7 @@ export default function AttendanceTable({ employeeId = 1 }: { employeeId?: numbe
       <h2 className="text-lg font-semibold mb-2">Attendance Records</h2>
       <Table
         headers={["ID", "Employee ID", "Date", "Status"]}
-        rows={records.map((r) => [r.id, r.employeeId, r.date, r.status])}
+        rows={records.map((r) => [r.id, r.employee_id, r.date, r.status])}
       />
     </section>
   );

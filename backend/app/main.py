@@ -23,6 +23,7 @@ app.add_middleware(LoggingMiddleware)
 origins = [
     settings.FRONTEND_URL,
     settings.FRONTEND_URL_PROD,
+    "https://mvphrm.vercel.app/"
 ]
 
 app.add_middleware(
